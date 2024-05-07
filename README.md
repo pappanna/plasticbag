@@ -27,13 +27,6 @@ ____
 
 After downloading the above data, run the following scripts in order:
 
-hr {
-    border: 1px dotted #ff0000;
-    border-style: none none dotted; 
-    color: #fff; 
-    background-color: #fff;
-}
-
 #### Step 0: __00_cleanup__: Compile cleanup data, match to geographic boundaries, and then aggregate to various spatio-temporal levels.
 <details><summary> 
     
@@ -109,8 +102,8 @@ hr {
     - data/processed/00_data_intermediate/... (separate files for each aggregation)
 </details>
 
------
-#### __01_policy__ (compile and format bag policy data)
+
+#### Step 1: __01_policy__: Compile bag policies and match to zip codes. 
 
 
 - __FILE__: 
