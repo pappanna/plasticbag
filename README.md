@@ -58,10 +58,11 @@ Scripts to run entire pipeline:
        - Appendix Figure S5: `03z_appendix_figs05_cleanup_year.R` (chart with the number of cleanups per year) 
 4. __Step 04: 04_analysis__: This folder conducts the main regression analyses and robustness checks.
    - Main Figures and Tables:
-       - Figure 2, Appendix Figure S6, and Appendix Table S4: `04a_figure2_figs06_tabs04_main_results.R` (main results and placebo outcomes)
+       - Figure 2: `04a_figure2_main_results.R` (main results and placebo outcomes)
        - Figure 3 (part b): `04b_figure3_spillover.R` (spillover results)
        - Figure 4: `04c_figure4_policy_type.R` (analysis by policy type) 
    - Appendix Figures:
+       - Appendix Figure S6 and Appendix Table S4: `04z_appendix_figs06_tabs04_other.R` (other outcomes)
        - Appendix Figure S7: `04z_appendix_figs07_time_aggregation.R` (robustness to various temporal aggregations of the data)
        - Appendix Figure S8: `04z_appendix_figs08_spatial_aggregation.R` (robustness to various spatial aggregations of the data)
        - Appendix Figure S9 and S10: `04z_appendix_figs09_figs10_balances.R` (robustness to using balanced panel)
