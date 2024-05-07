@@ -49,6 +49,16 @@ After downloading the above data, run the following scripts in order.
                 - data/processed/00_data_cleanup_county_zip_cell.rda 
         
       </details>
+    - <details>
+      <summary>00d_cleanup_data_clean.R: clean (normalized variables, outliers, etc.) </summary>
+        
+          - requires: 
+                - data/processed/00_dat_cleanup_county_zip_cell.rda (from previous step)
+          - produces: 
+                - data/processed/00_data_cleanup.rda
+                - data/processed/00_data_cleanup_locations.csv
+        
+      </details>
 - __01_policy__ (compile and format bag policy data)
 
 
