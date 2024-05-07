@@ -17,18 +17,18 @@ Download the following data:
     - Saved in __data/policies__ directory, provided in directory.
 - __TIDES__: Downloaded cleanup data for the United States from Ocean Conservancy [website](https://www.coastalcleanupdata.org/reports). 
     - Download files for 2000-2009, 2010-2014, and then each separate year from 2015 until 2023.
-    - Save files in the __data/tides__ directory.
+    - Save files in the __data/tides__ directory, as _year.csv_ (and _2000-2009.csv_, _2010-2014.csv)
 - __Shapefiles__: Download shapefiles for processing cleanups and policies.
     - Download county shapefiles from [here](https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html) from the US Census Bureau.
     - Download TIGER Zip Code tabulation areas from [here](https://catalog.data.gov/dataset/tiger-line-shapefile-2019-2010-nation-u-s-2010-census-5-digit-zip-code-tabulation-area-zcta5-na) from the US Census Bureau (through [data.gov](data.gov).
-    - Save files in the __data/shapefiles__ directory.
+    - Save files in the __data/shapefiles__ directory, county shapefile should be in folder called _county_, files called _cb_2018_us_county_500k.shp_, while zip codes shapefile folder and files should be called _tl_2019_us_zcta510_.
 - __Other__: Helper files with US county and state fips codes, lists of US counties and zip codes in __data/other__ directory, provided in the directory except as noted below.
-    - Download zip code list and 2020 IRS population data from United States zip codes [here](https://www.unitedstateszipcodes.org/zip-code-database/) and save in __data/other__ directory.
+    - Download zip code list and 2020 IRS population data from United States zip codes [here](https://www.unitedstateszipcodes.org/zip-code-database/) and save as _uszipcodes.csv_ in __data/other__ directory.
 
 ____
 ### Code
 
-After downloading the above data, run the following scripts in order:
+After downloading the above data, run the following scripts in order (click on each to expand details):
 
 #### Step 0: __00_cleanup__: Compile cleanup data, match to geographic boundaries, and then aggregate to various spatio-temporal levels.
 <details><summary> 
@@ -164,6 +164,7 @@ After downloading the above data, run the following scripts in order:
 - requires:
     - data/processed/01_zip_policy_characteristics.rda (from step 1b)
     - data/processed/01_zip_neighbors_policy.rda (from step 1d)
+    - data/processed/01_county_policy.rda (from step 1a)
     - data/processed/00_data_intermediate/... (separate file for each aggregation, from step 0f)
 - produces: 
     - data/processed/02_data_merged/... (separate file for each aggregation)
