@@ -31,28 +31,24 @@ After downloading the above data, run the following scripts in order.
         
       </details>
    - <details>
-      <summary>00a_cleanup_data_country.R: compile cleanups and match to county</summary>
+      <summary>00b_cleanup_data_zip.R: match cleanups to zip code </summary>
         
             - requires: 
-                - data/shapefiles/county/cb_2018_us_county_500k.shp (county shapefile)
-                - data/other/us-state-ansi-fips.csv 
-                - data/other/statefips.csv (state fips codes)
-                - data/other/us-county-ansi-fips.csv (county fips codes)
+                - data/processed/00_data_cleanup_country.rda (from previous step)
+                - data/shapefiles/tl_2019_us_zcta510/tl_2019_us_zcta510.shp (zip code tabulation area shapefile)
             - produces: 
-                - data/processed/00_data_cleanup_county.rda
+                - data/processed/00_data_cleanup_county_zip.rda 
         
       </details>
-    - __00b_cleanup_data_zip.R__: match cleanups to zip code 
-        - requires: 
-            - data/processed/00_data_cleanup_country.rda (from previous step)
-            - data/shapefiles/tl_2019_us_zcta510/tl_2019_us_zcta510.shp (zip code tabulation area shapefile)
-        - produces: 
-            - data/processed/00_data_cleanup_county_zip.rda 
-    - __00c_cleanup_data_cell.R__: create 0.1/0.01/0.001 degree cells
-        - requires: 
-            - data/processed/00_data_cleanup_county_zip.rda (from previous step)
-        - produces: 
-            - 
+    - <details>
+      <summary>00c_cleanup_data_cell.R: create 0.1/0.01/0.001 degree cells </summary>
+        
+          - requires: 
+                - data/processed/00_data_cleanup_county_zip.rda (from previous step)
+          - produces: 
+                - data/processed/00_data_cleanup_county_zip_cell.rda 
+        
+      </details>
 - __01_policy__ (compile and format bag policy data)
 
 
