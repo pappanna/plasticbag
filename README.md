@@ -33,14 +33,14 @@ Refer to the .txt files in each data folder to ensure all necessary files are do
 ____
 ### Code
 
-Scripts to run all 
-__`_00-02_create_data.R`__: This script runs all of Steps 0 - 2 and creates the final data used in the analysis (it requires all of the data outlined above).
+Scripts to run entire pipeline: 
+- __`_00-02_create_data.R`__: This script runs all of Steps 0 - 2 and creates the final data used in the analysis (it requires all of the data outlined above).
    - Please see Section Data Code Details below for more details on file requirements and steps.
-   - All final data (various spatio-temporal aggregations) should be saved in the __data/processed/02_data_merged/__ folder.
-__`_03_04a_main_figures.R`__: This script creates all the main figures.
+   - All final data (various spatio-temporal aggregations) should be saved in the __data/processed/02_data_merged/__ folder.   
+- __`_03_04a_main_figures.R`__: This script creates all the main figures.
    - See below for each separate file.
-   - All outputs are saved in the __figures/__ and __tables/__ folders. 
-__`_03_04b_appendix_figures_tables.R`__: This script creates all the appendix figures and tables.
+   - All outputs are saved in the __figures/__ and __tables/__ folders.
+- __`_03_04b_appendix_figures_tables.R`__: This script creates all the appendix figures and tables.
    - See below for each separate file.
    - All outputs are saved in the __figures/appendix__ and __tables/appendix__ folders. 
 
