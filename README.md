@@ -123,7 +123,18 @@ After downloading the above data, run the following scripts in order:
 </details>
 <details><summary>
 
-##### b. `01b_neighbor_zip.R`: find all the neighbors of each zip code 
+##### b. `01b_zip_characteristics.R`: add demographic characteristics to zip codes 
+</summary>
+        
+- requires:
+    - data/processed/01_zip_policy.rda (from previous step) 
+    - data/other/raw_zip_characteristics.csv (downloaded from [Social Explorer](https://www.socialexplorer.com/))
+- produces: 
+    - data/processed/01_zip_policy_characteristics.rda 
+</details>
+<details><summary>
+
+##### c. `01c_neighbor_zip.R`: find all the neighbors of each zip code 
 </summary>
         
 - requires:
@@ -133,7 +144,7 @@ After downloading the above data, run the following scripts in order:
 </details>
 <details><summary>
 
-##### c. `01c_neighbor_zip_policy.R`: find neighbors, neighbors-of-neighbors, and neighbors-of-neighbors-of-neighbors of treated zip codes 
+##### d. `01d_neighbor_zip_policy.R`: find neighbors, neighbors-of-neighbors, and neighbors-of-neighbors-of-neighbors of treated zip codes 
 </summary>
         
 - requires:
@@ -151,12 +162,11 @@ After downloading the above data, run the following scripts in order:
 </summary>
         
 - requires:
-    - data/processed/
-    - data/processed/01_zip_neighbors_policy.rda
-    - data/processed/00_data_intermediate/... (separate file for each aggregation)
+    - data/processed/01_zip_policy_characteristics.rda (from step 1b)
+    - data/processed/01_zip_neighbors_policy.rda (from step 1d)
+    - data/processed/00_data_intermediate/... (separate file for each aggregation, from step 0f)
 - produces: 
-    - data/processed/01_zip_policy.rda
-    - data/processed/01_county_policy.rda 
+    - data/processed/02_data_merged/... (separate file for each aggregation)
 </details>
 <details><summary>
 
