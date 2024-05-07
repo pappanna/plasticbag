@@ -22,6 +22,8 @@ Download the following data:
     - Download county shapefiles from [here](https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html) from the US Census Bureau.
     - Download TIGER Zip Code tabulation areas from [here](https://catalog.data.gov/dataset/tiger-line-shapefile-2019-2010-nation-u-s-2010-census-5-digit-zip-code-tabulation-area-zcta5-na) from the US Census Bureau (through [data.gov](data.gov).
     - Save files in the __data/shapefiles__ directory, county shapefile should be in folder called _county_, files called _cb_2018_us_county_500k.shp_, while zip codes shapefile folder and files should be called _tl_2019_us_zcta510_.
+    - Download lakes from [Natural Earth](https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-lakes/) (North America supplement) and save in _lakes_ folder in __data/shapefiles__ directory.
+    - Download rivers from [USGS](https://www.sciencebase.gov/catalog/item/4fb55df0e4b04cb937751e02) and save in _rivers_ folder in __data/shapefiles__ directory.
 - __Other__: Helper files with US county and state fips codes, lists of US counties and zip codes in __data/other__ directory, provided in the directory except as noted below.
     - Download zip code list and 2020 IRS population data from United States zip codes [here](https://www.unitedstateszipcodes.org/zip-code-database/) and save as _uszipcodes.csv_ in __data/other__ directory.
     - Download demographic characteristics of zip codes from [Social Explorer](https://www.socialexplorer.com/) and save as _raw_zip_characteristics.csv_ in __data/other__ directory.
@@ -35,7 +37,10 @@ ____
    - Please see Section Code Details below for more details on file requirements and steps.
    - All final data (various spatio-temporal aggregations) should be saved in the __data/processed/02_data_merged/__ folder. 
 3. __Step 03: 03_summary__: This folder creates summary statistic figures and tables.
-4. 
+   - Figure 1: `03a_figure1_data_summary.R` (data summary)
+   - Figure 3: `03b_figure3_spillover_demo.R`
+         - Note that this files requires 
+5. 
 
 ____
 ### Code Details 
