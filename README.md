@@ -23,8 +23,11 @@ After downloading the above data, run the following scripts in order.
 
 - __00_cleanup__ (compile and format cleanup data)
   <details>
+      
     <summary> 
+        
         ##### `00a_cleanup_data_country.R`: compile cleanups and match to county
+  
     </summary>
 
             - requires: 
