@@ -14,6 +14,7 @@ ____
 Download the following data: 
 
 - __Policies__: Compiled from [Bag the Ban](https://www.bagtheban.com/in-your-state/), the [Retail Compliance Center](https://www.rila.org/retail-compliance-center/consumer-bag-legislation), [BagLaws.com]{https://www.baglaws.com/}, the [Duke Nicholas Institute's Plastics Policy Inventory](https://nicholasinstitute.duke.edu/plastics-policy-inventory), and [Wikipedia](https://en.wikipedia.org/wiki/Plastic_bag_bans_in_the_United_States); and using [MassGreen](http://www.massgreen.org/plastic-bag-legislation.html) and [Californians Against Waste](https://www.cawrecycles.org/list-of-local-bag-bans) to confirm legislation in Massachusetts and California.
+    - Saved in __data/policies__ directory, provided in directory.
 - __TIDES__: Downloaded cleanup data for the United States from Ocean Conservancy [website](https://www.coastalcleanupdata.org/reports). 
     - Download files for 2000-2009, 2010-2014, and then each separate year from 2015 until 2023.
     - Save files in the __data/tides__ directory.
@@ -21,7 +22,8 @@ Download the following data:
     - Download county shapefiles from [here](https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html) from the US Census Bureau.
     - Download TIGER Zip Code tabulation areas from [here](https://catalog.data.gov/dataset/tiger-line-shapefile-2019-2010-nation-u-s-2010-census-5-digit-zip-code-tabulation-area-zcta5-na) from the US Census Bureau (through [data.gov](data.gov).
     - Save files in the __data/shapefiles__ directory.
-- __Other__: Helper files with US county and state fips codes, lists of US counties and zip codes in __data/other__ directory, provided in the directory.
+- __Other__: Helper files with US county and state fips codes, lists of US counties and zip codes in __data/other__ directory, provided in the directory except as noted below.
+    - Download zip code list and 2020 IRS population data from United States zip codes [here](https://www.unitedstateszipcodes.org/zip-code-database/) and save in __dta/other__ directory.
 
 ____
 ### Code
