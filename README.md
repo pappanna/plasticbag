@@ -13,7 +13,7 @@ ____
 
 Download the following data: 
 
-- __Policies__: Compiled from [Bag the Ban](https://www.bagtheban.com/in-your-state/), the [Retail Compliance Center](https://www.rila.org/retail-compliance-center/consumer-bag-legislation), [BagLaws.com]{https://www.baglaws.com/}, the [Duke Nicholas Institute's Plastics Policy Inventory](https://nicholasinstitute.duke.edu/plastics-policy-inventory), and [Wikipedia](https://en.wikipedia.org/wiki/Plastic_bag_bans_in_the_United_States); and using [MassGreen](http://www.massgreen.org/plastic-bag-legislation.html) and [Californians Against Waste](https://www.cawrecycles.org/list-of-local-bag-bans) to confirm legislation in Massachusetts and California.
+- __Policies__: Compiled from [Bag the Ban](https://www.bagtheban.com/in-your-state/), the [Retail Compliance Center](https://www.rila.org/retail-compliance-center/consumer-bag-legislation), [BagLaws.com](https://www.baglaws.com/), the [Duke Nicholas Institute's Plastics Policy Inventory](https://nicholasinstitute.duke.edu/plastics-policy-inventory), and [Wikipedia](https://en.wikipedia.org/wiki/Plastic_bag_bans_in_the_United_States); and using [MassGreen](http://www.massgreen.org/plastic-bag-legislation.html) and [Californians Against Waste](https://www.cawrecycles.org/list-of-local-bag-bans) to confirm legislation in Massachusetts and California.
     - Saved in __data/policies__ directory, provided in directory.
 - __TIDES__: Downloaded cleanup data for the United States from Ocean Conservancy [website](https://www.coastalcleanupdata.org/reports). 
     - Download files for 2000-2009, 2010-2014, and then each separate year from 2015 until 2023.
@@ -31,8 +31,8 @@ Refer to the .txt files in each data folder to ensure all necessary files are do
 ____
 ### Code
 
-1. __Step 00-02: `_00-02_create_data.R`__: This script runs all of Steps 0 - 2 and creates the final data used in the analysis (it requires all of the data outlined above). Please see Section Code Details below for more details on file requirements and steps.
-   - If the code runs correctly, final data should be saved in the __data/processed/02_data_merged__ folder. 
+0. __Step 00-02: `_00-02_create_data.R`__: This script runs all of Steps 0 - 2 and creates the final data used in the analysis (it requires all of the data outlined above). Please see Section Code Details below for more details on file requirements and steps.
+   - If the code runs correctly, all final data (various spatio-temporal aggregations) should be saved in the __data/processed/02_data_merged/__ folder. 
 3. __Step 03: 03_summary__: This folder creates summary statistic figures and tables.
 4. 
 
