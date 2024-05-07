@@ -21,8 +21,7 @@ ____
 
 After downloading the above data, run the following scripts in order. 
 
-#### __00_cleanup__ 
-Compile cleanup data, match to geographic boundaries, and then aggregate to various spatio-temporal levels.
+#### Step 0: __00_cleanup__: Compile cleanup data, match to geographic boundaries, and then aggregate to various spatio-temporal levels.
 <details><summary> 
     
 ##### `00a_cleanup_data_country.R`: compile cleanups and match to county
