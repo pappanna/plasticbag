@@ -11,6 +11,8 @@ ____
 
 ### Data 
 
+Download the following data: 
+
 - __TIDES__: Downloaded cleanup data for the United States from Ocean Conservancy [website](https://www.coastalcleanupdata.org/reports). 
     - Download files for 2000-2009, 2010-2014, and then each separate year from 2015 until 2023.
     - Save files in the __data/tides__ directory.
@@ -18,7 +20,7 @@ ____
     - Download county shapefiles from [here](https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html) from the US Census Bureau.
     - Download TIGER Zip Code tabulation areas from [here](https://catalog.data.gov/dataset/tiger-line-shapefile-2019-2010-nation-u-s-2010-census-5-digit-zip-code-tabulation-area-zcta5-na) from the US Census Bureau (through [data.gov](data.gov).
     - Save files in the __data/shapefiles__ directory.
-- __Other__: Helper files with county and state fips codes in __data/other__ diretory.
+- __Other__: Helper files with county and state fips codes in __data/other__ directory, provided in the directory.
 
 ____
 ### Code
