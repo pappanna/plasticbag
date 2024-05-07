@@ -42,17 +42,21 @@ ____
        - Figure 3 (part a): `03b_figure3_spillover_demo.R`
              - Note that this requires lake and river shapefiles (see above).
    - Appendix Figures and Tables: 
-       - Appendix Table S1: `03z_appendix_tabs1_cleanup_stats.R` (cleanup summary statistics) 
-       - Appendix Figure S2 and Table S2: `03z_appendix_figs2_tabs2_repeat_cleanup.R` (repeat cleanups)
-       - Appendix Figure S3: `03z_appendix_figs3_policy_map.R` (map of policies in the US)
-       - Appendix Figure S4: `03z_appendix_figs4_cleanup_objects.R` (chart with most common objects found in cleanups)
-       - Appendix Figure S5: `03z_appendix_figs5_cleanup_year.R` (chart with the number of cleanups per year) 
+       - Appendix Table S1: `03z_appendix_tabs01_cleanup_stats.R` (cleanup summary statistics) 
+       - Appendix Figure S2 and Table S2: `03z_appendix_figs02_tabs02_repeat_cleanup.R` (repeat cleanups)
+       - Appendix Figure S3: `03z_appendix_figs03_policy_map.R` (map of policies in the US)
+       - Appendix Figure S4: `03z_appendix_figs04_cleanup_objects.R` (chart with most common objects found in cleanups)
+       - Appendix Figure S5: `03z_appendix_figs05_cleanup_year.R` (chart with the number of cleanups per year) 
 4. __Step 04: 04_analysis__: This folder conducts the main regression analyses and robustness checks.
    - Main Figures and Tables:
-       - Figure 2, Appendix Figure S6, and Appendix Table S4: `04a_figure2_figs6_tabs4_main_results.R` (main results and placebo outcomes)
+       - Figure 2, Appendix Figure S6, and Appendix Table S4: `04a_figure2_figs06_tabs04_main_results.R` (main results and placebo outcomes)
        - Figure 3 (part b): `04b_figure3_spillover.R` (spillover results)
        - Figure 4: `04c_figure4_policy_type.R` (analysis by policy type) 
-   - Appendix Figures: 
+   - Appendix Figures:
+       - Appendix Figure S7: `04z_appendix_figs07_time_aggregation.R` (robustness to various temporal aggregations of the data)
+       - Appendix Figure S8: `04z_appendix_figs08_spatial_aggregation.R` (robustness to various spatial aggregations of the data)
+       - Appendix Figure S9 and S10: `04z_appendix_figs09_figs10_balances.R` (robustness to using balanced panel)
+       - Appendix Figure S11: `04z_appendix_figs11_pandemic.R` (robustness to dropping the pandemic) 
 
 ____
 ### Code Details 
