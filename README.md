@@ -133,7 +133,7 @@ After downloading the above data, run the following scripts in order:
 </details>
 <details><summary>
 
-##### c. `01c_neighbor_zip_policy.R`: find all the neighbors of each zip code 
+##### c. `01c_neighbor_zip_policy.R`: find neighbors, neighbors-of-neighbors, and neighbors-of-neighbors-of-neighbors of treated zip codes 
 </summary>
         
 - requires:
@@ -151,10 +151,9 @@ After downloading the above data, run the following scripts in order:
 </summary>
         
 - requires:
-    - data/other/uscounties.csv (list of US counties)
-    - data/other/uszipcodes.csv (list of US zip codes)
-    - data/shapefiles/tl_2019_us_zcta510/tl_2019_us_zcta510.shp (zip code tabulation area shapefile)
-    - data/policies/policies.xlsx (list of bag policies) 
+    - data/processed/
+    - data/processed/01_zip_neighbors_policy.rda
+    - data/processed/00_data_intermediate/... (separate file for each aggregation)
 - produces: 
     - data/processed/01_zip_policy.rda
     - data/processed/01_county_policy.rda 
