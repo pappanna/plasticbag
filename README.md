@@ -24,7 +24,7 @@ After downloading the above data, run the following scripts in order.
 #### Step 0: __00_cleanup__: Compile cleanup data, match to geographic boundaries, and then aggregate to various spatio-temporal levels.
 <details><summary> 
     
-##### `00a_cleanup_data_country.R`: compile cleanups and match to county
+##### a. `00a_cleanup_data_country.R`: compile cleanups and match to county
 </summary>
 
 ##### Details: 
@@ -38,7 +38,7 @@ After downloading the above data, run the following scripts in order.
 </details>
 <details><summary>
     
-##### `00b_cleanup_data_zip.R`: match cleanups to zip code 
+##### b. `00b_cleanup_data_zip.R`: match cleanups to zip code 
 </summary>
 
 ##### Details: 
