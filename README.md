@@ -200,4 +200,3 @@ ____
 - produces: 
     - data/processed/02_data_merged/... (separate file for each aggregation)
 </details>
-<details><summary>
