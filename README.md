@@ -13,6 +13,7 @@ ____
 
 Download the following data: 
 
+- __Policies__: Compiled from [Bag the Ban](https://www.bagtheban.com/in-your-state/), the [Retail Compliance Center](https://www.rila.org/retail-compliance-center/consumer-bag-legislation), [BagLaws.com]{https://www.baglaws.com/}, the [Duke Nicholas Institute's Plastics Policy Inventory](https://nicholasinstitute.duke.edu/plastics-policy-inventory), and [Wikipedia](https://en.wikipedia.org/wiki/Plastic_bag_bans_in_the_United_States); and using [MassGreen](http://www.massgreen.org/plastic-bag-legislation.html) and [Californians Against Waste](https://www.cawrecycles.org/list-of-local-bag-bans) to confirm legislation in Massachusetts and California.
 - __TIDES__: Downloaded cleanup data for the United States from Ocean Conservancy [website](https://www.coastalcleanupdata.org/reports). 
     - Download files for 2000-2009, 2010-2014, and then each separate year from 2015 until 2023.
     - Save files in the __data/tides__ directory.
