@@ -31,7 +31,10 @@ Refer to the .txt files in each data folder to ensure all necessary files are do
 ____
 ### Code
 
-1. Step 00-02: `_00-02_create_data.R`: This script runs all of Steps 0 - 2 and creates the final data used in the analysis (it requires all of the data outlined above). Please see Section Code Details below for more details on each of the files part of this process. 
+1. __Step 00-02: `_00-02_create_data.R`__: This script runs all of Steps 0 - 2 and creates the final data used in the analysis (it requires all of the data outlined above). Please see Section Code Details below for more details on file requirements and steps.
+   - If the code runs correctly, final data should be saved in the __data/processed/02_data_merged__ folder. 
+3. __Step 03: 03_summary__: This folder creates summary statistic figures and tables.
+4. 
 
 ____
 ### Code Details 
