@@ -24,9 +24,8 @@ Download the following data:
     - Download files for 2000-2009, 2010-2014, and then each separate year from 2015 until 2023.
     - Save files in the __data/tides__ directory, as _year.csv_ (and _2000-2009.csv_, _2010-2014.csv_)
 - __Shapefiles__: Download shapefiles for processing cleanups and policies.
-    - Download county shapefiles from [here](https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html) from the US Census Bureau.
-    - Download TIGER Zip Code tabulation areas from [here](https://catalog.data.gov/dataset/tiger-line-shapefile-2019-2010-nation-u-s-2010-census-5-digit-zip-code-tabulation-area-zcta5-na) from the US Census Bureau (through [data.gov](data.gov).
-    - Save files in the __data/shapefiles__ directory, county shapefile should be in folder called _county_, files called _cb_2018_us_county_500k.shp_, while zip codes shapefile folder and files should be called _tl_2019_us_zcta510_.
+    - Download county shapefiles from [here](https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html) from the US Census Bureau; save files in the __data/shapefiles__ directory, county shapefile should be in folder called _county_ (files called _cb_2018_us_county_500k.shp_).
+    - Download TIGER Zip Code tabulation areas from [here](https://catalog.data.gov/dataset/tiger-line-shapefile-2019-2010-nation-u-s-2010-census-5-digit-zip-code-tabulation-area-zcta5-na) from the US Census Bureau (through [data.gov](data.gov); save files in the __data/shapefiles__ directory, zip codes shapefile folder and files should be called _tl_2019_us_zcta510_.
     - Download lakes from [Natural Earth](https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-lakes/) (North America supplement) and save in _lakes_ folder in __data/shapefiles__ directory.
     - Download rivers from [USGS](https://www.sciencebase.gov/catalog/item/4fb55df0e4b04cb937751e02) and save in _rivers_ folder in __data/shapefiles__ directory.
 - __Other__: Helper files with US county and state fips codes, lists of US counties and zip codes in __data/other__ directory, provided in the directory except as noted below.
