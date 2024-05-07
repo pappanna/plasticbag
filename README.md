@@ -21,6 +21,7 @@ After downloading the above data, run the following scripts in order.
     - __00a_cleanup_data_country.R__: compile cleanups and match to county
     - <details>
       <summary>__00a_cleanup_data_country.R__: compile cleanups and match to county</summary>
+        
       - requires: 
             - data/shapefiles/county/cb_2018_us_county_500k.shp (county shapefile)
             - data/other/us-state-ansi-fips.csv 
@@ -28,6 +29,7 @@ After downloading the above data, run the following scripts in order.
             - data/other/us-county-ansi-fips.csv (county fips codes)
       - produces: 
             - data/processed/00_data_cleanup_county.rda
+        
       </details>
         
     - __00b_cleanup_data_zip.R__: match cleanups to zip code 
