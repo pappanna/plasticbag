@@ -27,7 +27,12 @@ ____
 
 After downloading the above data, run the following scripts in order:
 
-<hr style="border-top: dotted 1px;" />
+hr {
+    border: 1px dotted #ff0000;
+    border-style: none none dotted; 
+    color: #fff; 
+    background-color: #fff;
+}
 
 #### Step 0: __00_cleanup__: Compile cleanup data, match to geographic boundaries, and then aggregate to various spatio-temporal levels.
 <details><summary> 
