@@ -33,8 +33,8 @@ After downloading the above data, run the following scripts in order.
             - produces: 
                 - data/processed/00_data_cleanup_county.rda
   </details>
-      
-   - <details>
+  
+  <details>
       <summary>00b_cleanup_data_zip.R: match cleanups to zip code </summary>
         
             - requires: 
@@ -43,9 +43,9 @@ After downloading the above data, run the following scripts in order.
             - produces: 
                 - data/processed/00_data_cleanup_county_zip.rda 
         
-      </details>
+  </details>
       
-    - <details>
+  <details>
       <summary>00c_cleanup_data_cell.R: create 0.1/0.01/0.001 degree cells </summary>
         
           - requires: 
@@ -53,8 +53,8 @@ After downloading the above data, run the following scripts in order.
           - produces: 
                 - data/processed/00_data_cleanup_county_zip_cell.rda 
         
-      </details>
-    - <details>
+  </details>
+  <details>
       <summary>00d_cleanup_data_clean.R: clean (normalized variables, outliers, etc.) </summary>
         
           - requires: 
@@ -63,8 +63,8 @@ After downloading the above data, run the following scripts in order.
                 - data/processed/00_data_cleanup.rda
                 - data/processed/00_data_cleanup_locations.csv (for Google Earth Engine distance calculations)
         
-      </details>
-    - <details>
+  </details>
+  <details>
       <summary>00e_cleanup_distance.R: calculate distance to water bodies </summary>
         
           - requires: 
@@ -75,7 +75,7 @@ After downloading the above data, run the following scripts in order.
                 - data/processed/00_data_cleanup.rda
                 - data/processed/00_data_cleanup_locations.csv (for Google Earth Engine distance calculations)
         
-      </details>
+   </details>
 - __01_policy__ (compile and format bag policy data)
 
 
