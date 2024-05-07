@@ -1,6 +1,6 @@
 # Replication: _Are plastic bag regulations effective in reducing plastic litter? Evidence from shoreline cleanups_
 
-[Anna Papp](https://pappanna.github.io/) and [Kimberly L. Oremus](https://www.kimberlyoremus.com/)
+by [Anna Papp](https://pappanna.github.io/) and [Kimberly L. Oremus](https://www.kimberlyoremus.com/)
 
 _ReadMe last modified_: May 7th, 2024
 
