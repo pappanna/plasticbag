@@ -25,7 +25,7 @@ Download the following data:
 ____
 ### Code
 
-After downloading the above data, run the following scripts in order. 
+After downloading the above data, run the following scripts in order:
 
 #### Step 0: __00_cleanup__: Compile cleanup data, match to geographic boundaries, and then aggregate to various spatio-temporal levels.
 <details><summary> 
@@ -80,16 +80,26 @@ After downloading the above data, run the following scripts in order.
 </details>
 <details><summary>
     
-##### e. `00e_cleanup_distance.R`: calculate distance to water bodies 
+##### e. `00e_cleanup_distance.R`: calculate the distance to water bodies 
 </summary>
         
-- requires: 
-    - data/other/distanceCoast.csv
-    - data/other/distanceRivers.csv
+- requires:
+    - data/processed/00_data_cleanup.rda (from previous step)
+    - data/other/distanceCoast.csv (to replicate, use [GEE script](https://code.earthengine.google.com/1c7d8600e39ea4426ed228ec37b7d880))
+    - data/other/distanceRivers.csv (to replicate, use [GEE script](https://code.earthengine.google.com/f76e17729aa4d81bf88f6f27902b8f14))
     - data/other/distanceLakes.csv (to replicate, use [GEE script](https://code.earthengine.google.com/04129098eec313af5444f2a417dd8209))
 - produces: 
     - data/processed/00_data_cleanup.rda
-    - data/processed/00_data_cleanup_locations.csv (for Google Earth Engine distance calculations)
+</details>
+<details><summary>
+
+##### f. `00f_cleanup_final.R`: aggregate to various levels (e.g., cell, month)
+</summary>
+        
+- requires:
+    - data/processed/00_data_cleanup.rda (from previous step)
+- produces: 
+    - data/processed/00_data_intermediate/... (separate files for each aggregation)
 </details>
 
 #### __01_policy__ (compile and format bag policy data)
