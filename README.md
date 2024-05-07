@@ -20,7 +20,7 @@ Download the following data:
     - Download county shapefiles from [here](https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html) from the US Census Bureau.
     - Download TIGER Zip Code tabulation areas from [here](https://catalog.data.gov/dataset/tiger-line-shapefile-2019-2010-nation-u-s-2010-census-5-digit-zip-code-tabulation-area-zcta5-na) from the US Census Bureau (through [data.gov](data.gov).
     - Save files in the __data/shapefiles__ directory.
-- __Other__: Helper files with county and state fips codes in __data/other__ directory, provided in the directory.
+- __Other__: Helper files with US county and state fips codes, lists of US counties and zip codes in __data/other__ directory, provided in the directory.
 
 ____
 ### Code
@@ -104,6 +104,19 @@ After downloading the above data, run the following scripts in order:
 
 
 #### Step 1: __01_policy__: Compile bag policies and match to zip codes. 
+<details><summary>
+
+##### f. `01a_policy_county_zip.R`: aggregate policies
+</summary>
+        
+- requires:
+    - data/other/uscounties.csv (list of US counties)
+    - data/other/uszipcodes.csv (list of US zip codes)
+    - data/shapefiles/tl_2019_us_zcta510/tl_2019_us_zcta510.shp (zip code tabulation area shapefile)
+    - data/policies/policies.xlsx (list of bag policies) 
+- produces: 
+    - data/processed/00_data_intermediate/... (separate files for each aggregation)
+</details>
 
 
 - __FILE__: 
