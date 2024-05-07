@@ -24,6 +24,9 @@ Download the following data:
     - Save files in the __data/shapefiles__ directory, county shapefile should be in folder called _county_, files called _cb_2018_us_county_500k.shp_, while zip codes shapefile folder and files should be called _tl_2019_us_zcta510_.
 - __Other__: Helper files with US county and state fips codes, lists of US counties and zip codes in __data/other__ directory, provided in the directory except as noted below.
     - Download zip code list and 2020 IRS population data from United States zip codes [here](https://www.unitedstateszipcodes.org/zip-code-database/) and save as _uszipcodes.csv_ in __data/other__ directory.
+    - Download demographic characteristics of zip codes from [Social Explorer](https://www.socialexplorer.com/) and save as _raw_zip_characteristics.csv_ in __data/other__ directory.
+
+Refer to the .txt files in each data folder to ensure all necessary files are downloaded. 
 
 ____
 ### Code
