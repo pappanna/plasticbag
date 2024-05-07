@@ -31,7 +31,7 @@ Refer to the .txt files in each data folder to ensure all necessary files are do
 ____
 ### Code
 
-After downloading the above data, run the following scripts in order (click on each to expand details):
+Script `_00-02_create_data.R` runs all of Steps 0 - 2 and creates the final data that's used in analysis (requires all of the data outlined above). Please see below for details on each script. 
 
 #### Step 0: __00_cleanup__: Compile cleanup data, match to geographic boundaries, and then aggregate to various spatio-temporal levels.
 <details><summary> 
