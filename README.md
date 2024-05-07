@@ -27,6 +27,8 @@ Compile cleanup data, match to geographic boundaries, and then aggregate to vari
 
 ##### `00a_cleanup_data_country.R`: compile cleanups and match to county
 </summary>
+
+##### Details: 
 - requires: 
     - data/shapefiles/county/cb_2018_us_county_500k.shp (county shapefile)
     - data/other/us-state-ansi-fips.csv 
