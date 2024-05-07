@@ -20,15 +20,15 @@ After downloading the above data, run the following scripts in order.
 - __00_cleanup__ (compile and format cleanup data)
     - __00a_cleanup_data_country.R__: compile cleanups and match to county
     - <details>
-      <summary>__00a_cleanup_data_country.R__: compile cleanups and match to county</summary>
+      <summary>00a_cleanup_data_country.R: compile cleanups and match to county</summary>
         
-      - requires: 
-            - data/shapefiles/county/cb_2018_us_county_500k.shp (county shapefile)
-            - data/other/us-state-ansi-fips.csv 
-            - data/other/statefips.csv (state fips codes)
-            - data/other/us-county-ansi-fips.csv (county fips codes)
-      - produces: 
-            - data/processed/00_data_cleanup_county.rda
+- requires: 
+    - data/shapefiles/county/cb_2018_us_county_500k.shp (county shapefile)
+    - data/other/us-state-ansi-fips.csv 
+    - data/other/statefips.csv (state fips codes)
+    - data/other/us-county-ansi-fips.csv (county fips codes)
+- produces: 
+    - data/processed/00_data_cleanup_county.rda
         
       </details>
         
