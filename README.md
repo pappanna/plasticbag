@@ -60,7 +60,19 @@ After downloading the above data, run the following scripts in order.
                 - data/processed/00_dat_cleanup_county_zip_cell.rda (from previous step)
           - produces: 
                 - data/processed/00_data_cleanup.rda
-                - data/processed/00_data_cleanup_locations.csv
+                - data/processed/00_data_cleanup_locations.csv (for Google Earth Engine distance calculations)
+        
+      </details>
+    - <details>
+      <summary>00e_cleanup_distance.R: calculate distance to water bodies </summary>
+        
+          - requires: 
+                - data/other/distanceCoast.csv
+                - data/other/distanceRivers.csv
+                - data/other/distanceLakes.csv (to replicate, use [GEE script](https://code.earthengine.google.com/04129098eec313af5444f2a417dd8209))
+          - produces: 
+                - data/processed/00_data_cleanup.rda
+                - data/processed/00_data_cleanup_locations.csv (for Google Earth Engine distance calculations)
         
       </details>
 - __01_policy__ (compile and format bag policy data)
