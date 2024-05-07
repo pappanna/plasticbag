@@ -33,6 +33,7 @@ After downloading the above data, run the following scripts in order.
             - produces: 
                 - data/processed/00_data_cleanup_county.rda
       </details>
+      
    - <details>
       <summary>00b_cleanup_data_zip.R: match cleanups to zip code </summary>
         
@@ -43,6 +44,7 @@ After downloading the above data, run the following scripts in order.
                 - data/processed/00_data_cleanup_county_zip.rda 
         
       </details>
+      
     - <details>
       <summary>00c_cleanup_data_cell.R: create 0.1/0.01/0.001 degree cells </summary>
         
