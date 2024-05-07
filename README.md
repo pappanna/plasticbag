@@ -38,49 +38,57 @@ Compile cleanup data, match to geographic boundaries, and then aggregate to vari
     - data/processed/00_data_cleanup_county.rda
 </details>
   
-  <details>
-      <summary>00b_cleanup_data_zip.R: match cleanups to zip code </summary>
+<details><summary>
+    
+##### `00b_cleanup_data_zip.R`: match cleanups to zip code 
+</summary>
+
+##### Details: 
+- requires: 
+    - data/processed/00_data_cleanup_country.rda (from previous step)
+    - data/shapefiles/tl_2019_us_zcta510/tl_2019_us_zcta510.shp (zip code tabulation area shapefile)
+- produces: 
+    - data/processed/00_data_cleanup_county_zip.rda 
+
+</details>
+<details><summary>
+    
+##### `00c_cleanup_data_cell.R`: create 0.1/0.01/0.001 degree cells 
+</summary>
+
+##### Details: 
+- requires: 
+    - data/processed/00_data_cleanup_county_zip.rda (from previous step)
+- produces: 
+    - data/processed/00_data_cleanup_county_zip_cell.rda 
+</details>
+<details><summary>
+    
+##### `00d_cleanup_data_clean.R`: clean (normalized variables, outliers, etc.) 
+</summary>
+
+##### Details: 
+- requires: 
+    - data/processed/00_dat_cleanup_county_zip_cell.rda (from previous step)
+- produces: 
+    - data/processed/00_data_cleanup.rda
+    - data/processed/00_data_cleanup_locations.csv (for Google Earth Engine distance calculations)     
+</details>
+<details><summary>
+    
+##### `00e_cleanup_distance.R`: calculate distance to water bodies 
+</summary>
         
-            - requires: 
-                - data/processed/00_data_cleanup_country.rda (from previous step)
-                - data/shapefiles/tl_2019_us_zcta510/tl_2019_us_zcta510.shp (zip code tabulation area shapefile)
-            - produces: 
-                - data/processed/00_data_cleanup_county_zip.rda 
-        
-  </details>
-      
-  <details>
-      <summary>00c_cleanup_data_cell.R: create 0.1/0.01/0.001 degree cells </summary>
-        
-          - requires: 
-                - data/processed/00_data_cleanup_county_zip.rda (from previous step)
-          - produces: 
-                - data/processed/00_data_cleanup_county_zip_cell.rda 
-        
-  </details>
-  <details>
-      <summary>00d_cleanup_data_clean.R: clean (normalized variables, outliers, etc.) </summary>
-        
-          - requires: 
-                - data/processed/00_dat_cleanup_county_zip_cell.rda (from previous step)
-          - produces: 
-                - data/processed/00_data_cleanup.rda
-                - data/processed/00_data_cleanup_locations.csv (for Google Earth Engine distance calculations)
-        
-  </details>
-  <details>
-      <summary>00e_cleanup_distance.R: calculate distance to water bodies </summary>
-        
-          - requires: 
-                - data/other/distanceCoast.csv
-                - data/other/distanceRivers.csv
-                - data/other/distanceLakes.csv (to replicate, use [GEE script](https://code.earthengine.google.com/04129098eec313af5444f2a417dd8209))
-          - produces: 
-                - data/processed/00_data_cleanup.rda
-                - data/processed/00_data_cleanup_locations.csv (for Google Earth Engine distance calculations)
-        
-   </details>
-- __01_policy__ (compile and format bag policy data)
+- requires: 
+    - data/other/distanceCoast.csv
+    - data/other/distanceRivers.csv
+    - data/other/distanceLakes.csv (to replicate, use [GEE script](https://code.earthengine.google.com/04129098eec313af5444f2a417dd8209))
+- produces: 
+    - data/processed/00_data_cleanup.rda
+    - data/processed/00_data_cleanup_locations.csv (for Google Earth Engine distance calculations)
+</details>
+
+#### __01_policy__ (compile and format bag policy data)
 
 
 - __FILE__: 
