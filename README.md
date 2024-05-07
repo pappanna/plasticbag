@@ -36,14 +36,15 @@ ____
 0. __Step 00-02: `_00-02_create_data.R`__: This script runs all of Steps 0 - 2 and creates the final data used in the analysis (it requires all of the data outlined above).
    - Please see Section Code Details below for more details on file requirements and steps.
    - All final data (various spatio-temporal aggregations) should be saved in the __data/processed/02_data_merged/__ folder. 
-3. __Step 03: 03_summary__: This folder creates summary statistic figures and tables.
+3. __Step 03: 03_summary__: This folder creates summary statistic figures and tables for both main text and appendix. 
    - Figure 1: `03a_figure1_data_summary.R` (data summary)
    - Figure 3: `03b_figure3_spillover_demo.R`
-         - Note that this files requires lake and river shapefiles (see above).
+         - Note that this requires lake and river shapefiles (see above).
    - Appendix Table S1: `03z_appendix_tabs1_cleanup_stats.R` (cleanup summary statistics) 
    - Appendix Figure S2 and Table S2: `03z_appendix_figs2_tabs2_repeat_cleanup.R` (repeat cleanups)
    - Appendix Figure S3: `03z_appendix_figs3_policy_map.R` (map of policies in the US)
-   - 
+   - Appendix Figure S4: `03z_appendix_figs4_cleanup_objects.R` (chart with most common objects found in cleanups)
+   - Appendix Figure S5: `03z_appendix_figs5_cleanup_year.R` (chart with number of cleanups per year) 
 5. 
 
 ____
