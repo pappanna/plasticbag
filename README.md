@@ -31,7 +31,8 @@ Refer to the .txt files in each data folder to ensure all necessary files are do
 ____
 ### Code
 
-0. __Step 00-02: `_00-02_create_data.R`__: This script runs all of Steps 0 - 2 and creates the final data used in the analysis (it requires all of the data outlined above). Please see Section Code Details below for more details on file requirements and steps.
+0. __Step 00-02: `_00-02_create_data.R`__: This script runs all of Steps 0 - 2 and creates the final data used in the analysis (it requires all of the data outlined above).
+   - Please see Section Code Details below for more details on file requirements and steps.
    - If the code runs correctly, all final data (various spatio-temporal aggregations) should be saved in the __data/processed/02_data_merged/__ folder. 
 3. __Step 03: 03_summary__: This folder creates summary statistic figures and tables.
 4. 
