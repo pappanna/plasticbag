@@ -27,6 +27,7 @@ ____
 
 After downloading the above data, run the following scripts in order:
 
+-----
 #### Step 0: __00_cleanup__: Compile cleanup data, match to geographic boundaries, and then aggregate to various spatio-temporal levels.
 <details><summary> 
     
@@ -102,6 +103,7 @@ After downloading the above data, run the following scripts in order:
     - data/processed/00_data_intermediate/... (separate files for each aggregation)
 </details>
 
+-----
 #### __01_policy__ (compile and format bag policy data)
 
 
