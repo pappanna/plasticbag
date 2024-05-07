@@ -56,7 +56,9 @@ ____
        - Appendix Figure S7: `04z_appendix_figs07_time_aggregation.R` (robustness to various temporal aggregations of the data)
        - Appendix Figure S8: `04z_appendix_figs08_spatial_aggregation.R` (robustness to various spatial aggregations of the data)
        - Appendix Figure S9 and S10: `04z_appendix_figs09_figs10_balances.R` (robustness to using balanced panel)
-       - Appendix Figure S11: `04z_appendix_figs11_pandemic.R` (robustness to dropping the pandemic) 
+       - Appendix Figure S11: `04z_appendix_figs11_pandemic.R` (robustness to dropping the pandemic)
+       - Appendix Figure S12: `04z_appendix_figs12_cleanuplocation.R` (coastal vs. inland results)
+       - Appendix Figure S12: `04z_appendix_figs13_state_details.R` (state results) 
 
 ____
 ### Code Details 
