@@ -4,7 +4,7 @@ Anna Papp ([ap3907@columbia.edu](mailto:ap3907@columbia.edu)) and Kimberly L. Or
 
 _ReadMe last modified_: May 7th, 2024
 
-_Code last modified_: 
+_Code last modified_: April 15th, 2024
 
 _Abstract_: Plastic pollution poses threats to marine ecosystems and ecosystem services. While plastic bag bans and taxes are increasingly implemented worldwide, their effectiveness in reducing plastic litter remains unknown. Leveraging the patchwork of bag policies across different geographic scales in the United States and citizen science data on 97,774 U.S. shoreline cleanups, we assess the impact of these policies on plastic bag litter. We find that plastic bag policies lead to a 22-25% decrease in plastic bags as a share of total items collected at cleanups, with larger-scale bag bans and taxes further reducing shoreline litter. At a time when many jurisdictions are considering bag policies while others are preemptively prohibiting them, our study provides evidence that these policies can reduce shoreline plastic pollution.
 ____
