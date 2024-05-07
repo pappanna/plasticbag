@@ -58,7 +58,14 @@ ____
        - Appendix Figure S9 and S10: `04z_appendix_figs09_figs10_balances.R` (robustness to using balanced panel)
        - Appendix Figure S11: `04z_appendix_figs11_pandemic.R` (robustness to dropping the pandemic)
        - Appendix Figure S12: `04z_appendix_figs12_cleanuplocation.R` (coastal vs. inland results)
-       - Appendix Figure S12: `04z_appendix_figs13_state_details.R` (state results) 
+       - Appendix Figure S13: `04z_appendix_figs13_state_details.R` (state results) 
+
+Script __`_03_04a_main_figures.R`__ creates all the main figures. 
+
+Script __`_03_04b_appendix_figures_tables.R`__ creates all the appendix figures and tables.
+
+
+All outputs are saved in the __figures/__ and __tables/__ folders. 
 
 ____
 ### Code Details 
