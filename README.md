@@ -23,7 +23,7 @@ Download the following data:
     - Download TIGER Zip Code tabulation areas from [here](https://catalog.data.gov/dataset/tiger-line-shapefile-2019-2010-nation-u-s-2010-census-5-digit-zip-code-tabulation-area-zcta5-na) from the US Census Bureau (through [data.gov](data.gov).
     - Save files in the __data/shapefiles__ directory.
 - __Other__: Helper files with US county and state fips codes, lists of US counties and zip codes in __data/other__ directory, provided in the directory except as noted below.
-    - Download zip code list and 2020 IRS population data from United States zip codes [here](https://www.unitedstateszipcodes.org/zip-code-database/) and save in __dta/other__ directory.
+    - Download zip code list and 2020 IRS population data from United States zip codes [here](https://www.unitedstateszipcodes.org/zip-code-database/) and save in __data/other__ directory.
 
 ____
 ### Code
@@ -109,7 +109,7 @@ After downloading the above data, run the following scripts in order:
 #### Step 1: __01_policy__: Compile bag policies and match to zip codes. 
 <details><summary>
 
-##### f. `01a_policy_county_zip.R`: aggregate policies
+##### a. `01a_policy_county_zip.R`: aggregate policies
 </summary>
         
 - requires:
@@ -118,9 +118,48 @@ After downloading the above data, run the following scripts in order:
     - data/shapefiles/tl_2019_us_zcta510/tl_2019_us_zcta510.shp (zip code tabulation area shapefile)
     - data/policies/policies.xlsx (list of bag policies) 
 - produces: 
-    - data/processed/00_data_intermediate/... (separate files for each aggregation)
+    - data/processed/01_zip_policy.rda
+    - data/processed/01_county_policy.rda 
+</details>
+<details><summary>
+
+##### b. `01b_neighbor_zip.R`: find all the neighbors of each zip code 
+</summary>
+        
+- requires:
+    - data/shapefiles/tl_2019_us_zcta510/tl_2019_us_zcta510.shp (zip code tabulation area shapefile)
+- produces: 
+    - data/processed/01_zip_neighbors_list.rda 
+</details>
+<details><summary>
+
+##### c. `01c_neighbor_zip_policy.R`: find all the neighbors of each zip code 
+</summary>
+        
+- requires:
+    - data/processed/01_zip_neighbors_list.rda (from previous step)
+    - data/processed/01_zip_policy.rda (policy data, from step 1a.)
+- produces: 
+    - data/processed/01_zip_neighbors_policy.rda 
 </details>
 
+
+#### Step 2: __02_merge__: Merge cleanup and policy data 
+<details><summary>
+
+##### a. `01a_merge.R`: merge all policies (helper script)
+</summary>
+        
+- requires:
+    - data/other/uscounties.csv (list of US counties)
+    - data/other/uszipcodes.csv (list of US zip codes)
+    - data/shapefiles/tl_2019_us_zcta510/tl_2019_us_zcta510.shp (zip code tabulation area shapefile)
+    - data/policies/policies.xlsx (list of bag policies) 
+- produces: 
+    - data/processed/01_zip_policy.rda
+    - data/processed/01_county_policy.rda 
+</details>
+<details><summary>
 
 - __FILE__: 
         - requires: 
