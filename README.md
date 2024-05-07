@@ -46,7 +46,7 @@ Scripts to run entire pipeline:
    - All outputs are saved in the __figures/__ and __tables/__ folders.
 - __`_03_04b_appendix_figures_tables.R`__: This script creates all the appendix figures and tables.
    - See below for each separate file.
-   - All outputs are saved in the __figures/appendix__ and __tables/appendix__ folders. 
+   - All outputs are saved in the __figures/appendix/__ and __tables/appendix/__ folders. 
 
 #### Main analysis files: 
 3. __Step 03: 03_summary__: This folder creates summary statistic figures and tables for both main text and appendix.
