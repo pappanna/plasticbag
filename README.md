@@ -9,7 +9,8 @@ ____
 ### Data 
 
 - __TIDES__: Downloaded cleanup data for the United States from Ocean Conservancy [website](https://www.coastalcleanupdata.org/reports). 
-    - Download files for 2000-2009, 2010-2014, and then each separate year from 2015 until 2023. Save files in the __data/tides__ directory.
+    - Download files for 2000-2009, 2010-2014, and then each separate year from 2015 until 2023.
+    - Save files in the __data/tides__ directory.
 - __Other__: Helper files with county and state fips codes in __data/other__ diretory.
 
 ____
