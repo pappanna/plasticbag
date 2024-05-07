@@ -39,7 +39,11 @@ ____
 3. __Step 03: 03_summary__: This folder creates summary statistic figures and tables.
    - Figure 1: `03a_figure1_data_summary.R` (data summary)
    - Figure 3: `03b_figure3_spillover_demo.R`
-         - Note that this files requires 
+         - Note that this files requires lake and river shapefiles (see above).
+   - Appendix Table S1: `03z_appendix_tabs1_cleanup_stats.R` (cleanup summary statistics) 
+   - Appendix Figure S2 and Table S2: `03z_appendix_figs2_tabs2_repeat_cleanup.R` (repeat cleanups)
+   - Appendix Figure S3: `03z_appendix_figs3_policy_map.R` (map of policies in the US)
+   - 
 5. 
 
 ____
