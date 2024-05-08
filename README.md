@@ -190,7 +190,7 @@ ____
 </details>
 <details><summary>
         
-##### d. `01d_neighbor_zip_policy.R`: find neighbors, neighbors-of-neighbors, and neighbors-of-neighbors-of-neighbors of treated zip codes 
+##### d. `01d_neighbor_zip_policy.R`: find neighbors, neighbors-of-neighbors, etc. of treated zip codes 
 </summary>
         
 - requires:
