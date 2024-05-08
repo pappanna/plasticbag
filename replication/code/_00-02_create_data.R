@@ -11,7 +11,7 @@ rm(list=ls(all=TRUE)); cat("\014")
 
 ## directory 
 directory <- "/Users/annapapp/Library/CloudStorage/GoogleDrive-ap3907@columbia.edu/.shortcut-targets-by-id/19xFikvYAiHUYb-Az8rxT_I6rsaNv_57l/BagBan_BeachDebris/"
-setwd(paste0(directory, "replication/"))
+setwd(paste0(directory, "plasticbag/replication/"))
 
 
 # Step 0: Clean-Up Data Processing -----------------------------------------------------------
