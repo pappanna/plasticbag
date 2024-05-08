@@ -1,0 +1,3 @@
+Download the following: 
+- raw_zip_characteristics.csv from Social Explorer (https://www.socialexplorer.com/) 
+- uszipcodes.csv from https://www.unitedstateszipcodes.org/zip-code-database/

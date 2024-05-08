@@ -1,0 +1,5 @@
+Download the following: 
+- county shapefiles into county folder from https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html
+- zip code tabulation shapefiles into tl_2019_us_zcta510 folder from https://catalog.data.gov/dataset/tiger-line-shapefile-2019-2010-nation-u-s-2010-census-5-digit-zip-code-tabulation-area-zcta5-na
+- North American river shapefiles into rivers folder from https://www.sciencebase.gov/catalog/item/4fb55df0e4b04cb937751e02
+- North American lakes shapefiles into lakes folder from https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-lakes/
