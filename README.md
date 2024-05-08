@@ -189,7 +189,7 @@ ____
     - data/processed/01_zip_neighbors_list.rda 
 </details>
 <details><summary>
-
+        
 ##### d. `01d_neighbor_zip_policy.R`: find neighbors, neighbors-of-neighbors, and neighbors-of-neighbors-of-neighbors of treated zip codes 
 </summary>
         
@@ -199,7 +199,6 @@ ____
 - produces: 
     - data/processed/01_zip_neighbors_policy.rda 
 </details>
-
 
 #### Step 2: __02_merge__: Merge cleanup and policy data 
 <details><summary>
